@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Favorite Boy ❤️</title>
+<style>
+:root{--red:#d9273e;--deep:#8e1026;--pink:#fff0f2;--cream:#fffaf8;--ink:#42151d}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:linear-gradient(145deg,#fff8f7,#ffe5e9 55%,#ffd1d9);min-height:100vh;overflow-x:hidden}
+header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.1rem;font-weight:bold;color:var(--deep);letter-spacing:.08em}
+nav a{color:var(--deep);text-decoration:none;margin-left:18px;font:600 .85rem Arial}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:55px 20px;position:relative}
+.hero-card{max-width:790px;background:#ffffffc9;border:1px solid #ffffff;padding:clamp(28px,6vw,64px);border-radius:30px;box-shadow:0 25px 70px #8e10261c;backdrop-filter:blur(8px)}
+.eyebrow{font:700 .72rem Arial;letter-spacing:.24em;text-transform:uppercase;color:var(--red)}
+h1{font-size:clamp(2.7rem,8vw,5.8rem);line-height:.98;margin:18px 0;color:var(--deep);font-weight:500}
+h1 span{font-style:italic;color:var(--red)}
+.hero p{font-size:1.12rem;line-height:1.8;max-width:570px;margin:20px auto;color:#75414a}
+button{border:0;border-radius:999px;padding:14px 23px;background:var(--red);color:white;font-weight:700;cursor:pointer;transition:.2s;box-shadow:0 8px 22px #d9273e35}
+button:hover{transform:translateY(-3px);background:var(--deep)}
+button.secondary{background:white;color:var(--deep);border:1px solid #f2b7c0;box-shadow:none}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.heart{position:absolute;color:#e34a60;opacity:.22;animation:float 7s ease-in-out infinite;font-size:30px;pointer-events:none}
+.heart:nth-child(1){top:14%;left:10%}.heart:nth-child(2){top:23%;right:12%;animation-delay:1.5s}.heart:nth-child(3){bottom:12%;left:15%;animation-delay:3s}.heart:nth-child(4){bottom:18%;right:10%;animation-delay:2s}
+@keyframes float{50%{transform:translateY(-22px) rotate(12deg)}}
+section{padding:70px 7%;max-width:1100px;margin:auto}
+.section-title{text-align:center;color:var(--deep);font-size:2.5rem;font-weight:500;margin:0 0 12px}
+.sub{text-align:center;color:#87545d;line-height:1.7;margin:0 auto 35px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.note{background:#fffaf9;border:1px solid #f8d6dc;border-radius:22px;padding:25px;min-height:180px;box-shadow:0 12px 35px #8e102610}
+.note .icon{font-size:1.7rem}.note h3{color:var(--deep);font-size:1.25rem;margin:12px 0 8px}.note p{line-height:1.7;color:#80545c;margin:0}
+.letter{max-width:760px;margin:auto;background:#fff;border-radius:26px;padding:clamp(25px,5vw,48px);box-shadow:0 15px 45px #8e102615;text-align:center;border:1px solid #f8d6dc}
+.letter p{font-size:1.12rem;line-height:1.95;color:#75414a}
+.hidden-message{display:none;margin-top:20px;padding:20px;border-radius:18px;background:var(--pink);line-height:1.8;color:var(--deep)}
+.counter{text-align:center;margin-top:35px;color:#87545d}
+.counter strong{display:block;font-size:2.6rem;color:var(--red);margin:8px}
+footer{text-align:center;padding:35px 15px;color:#9a5d67;font: .85rem Arial}
+#toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--deep);color:white;padding:13px 20px;border-radius:30px;opacity:0;transition:.3s;pointer-events:none;z-index:4}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:600px){nav{display:none}.hero{min-height:72vh}}
+</style>
+</head>
+<body>
+<header><div class="logo">♡ A LITTLE LOVE NOTE</div><nav><a href="#reasons">WHY YOU</a><a href="#letter">MY MESSAGE</a></nav></header>
+<main>
+<div class="hero">
+  <div class="heart">♥</div><div class="heart">♡</div><div class="heart">♥</div><div class="heart">♡</div>
+  <div class="hero-card">
+    <div class="eyebrow">A tiny website for my favorite person</div>
+    <h1>Hey, my <span>handsome</span><br>baby boy.</h1>
+    <p>For the cutest boy with the prettiest favorite color. This little red corner of the internet is all yours. ❤️</p>
+    <div class="actions">
+      <button onclick="showLove()">Send him a little love</button>
+      <button class="secondary" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Read my note ↓</button>
+    </div>
+  </div>
+</div>
+<section id="reasons">
+  <h2 class="section-title">A few things I adore</h2>
+  <p class="sub">Just a small list, because I could probably write a whole book about you.</p>
+  <div class="grid">
+    <article class="note"><div class="icon">❤️</div><h3>Your heart</h3><p>Thank you for being patient with me, even on the days when my feelings get a little too loud.</p></article>
+    <article class="note"><div class="icon">🧸</div><h3>Your sweetness</h3><p>You make ordinary moments feel softer, warmer, and so much more special.</p></article>
+    <article class="note"><div class="icon">✨</div><h3>Your presence</h3><p>Having you around means more to me than I always know how to explain.</p></article>
+  </div>
+</section>
+<section id="letter">
+  <h2 class="section-title">Something I want you to know</h2>
+  <p class="sub">A message from my heart, especially for you.</p>
+  <div class="letter">
+    <div class="eyebrow">To my handsome, cute baby boy</div>
+    <p>Thank you for being here when I am angry. Thank you for staying, listening, and trying to understand me even when I don't express myself in the best way. I know I can be difficult sometimes, and I may not always know how to explain what I feel, but your patience and presence mean so much to me.</p>
+    <p>I don't expect you to make every bad moment disappear. Just having you beside me reminds me that I don't have to face everything alone. I appreciate you more than these little words can say, and I hope you never forget how loved you are.</p>
+    <button onclick="reveal()">There's one more thing…</button>
+    <div class="hidden-message" id="secret">I choose you on the easy days and the difficult ones, too. Thank you for being my safe place. I love you, my baby. ❤️</div>
+  </div>
+  <div class="counter"><span>Times I want to remind you that you're loved:</span><strong id="count">∞</strong><span>and still counting.</span></div>
+</section>
+</main>
+<footer>Made with so much love, and a little extra red. ♥</footer>
+<div id="toast">You are loved more than you know. ❤️</div>
+<script>
+function showLove(){
+ const t=document.getElementById('toast');t.classList.add('show');
+ setTimeout(()=>t.classList.remove('show'),2300);
+ for(let i=0;i<9;i++){const h=document.createElement('span');h.textContent=Math.random()>.5?'♥':'♡';h.style.cssText=`position:fixed;left:${10+Math.random()*80}%;top:${35+Math.random()*45}%;font-size:${18+Math.random()*22}px;color:#d9273e;z-index:5;pointer-events:none;transition:all 1.5s ease;`;document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform=`translateY(-${80+Math.random()*130}px) rotate(${Math.random()*90}deg)`;h.style.opacity='0'});setTimeout(()=>h.remove(),1600)}
+}
+function reveal(){const m=document.getElementById('secret');m.style.display='block';m.scrollIntoView({behavior:'smooth',block:'nearest'})}
+</script>
+</body>
+</html>
